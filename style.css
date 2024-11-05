@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* }### Primary
+
+Moderate violet:
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
+body {
+  background: hsl(0, 0%, 81%);
+  font-size: 1rem;
+}
+/* main{
+    display:inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+} */
+article {
+  width: 90%;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+article .top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0;
+  font-size: smaller;
+}
+article .top img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+.verify,
+.secondPrg {
+  opacity: 50%;
+}
+.mainPrg {
+  font-size: xx-large;
+  font-weight: 700;
+  position: relative;
+  z-index: 5;
+}
+.daniel {
+  position: relative;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  grid-area: daniel;
+}
+.daniel .quotation {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+  z-index: 0;
+}
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  grid-area: jonathan;
+
+}
+.jeanette {
+  background-color: white;
+  grid-area: jeanette;
+
+}
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+  color: white;  grid-area: patrick;
+
+}
+.kira{
+    background-color: white;
+    grid-area: kira;
+
+}
+@media (min-width:480px) and (max-width:780px){
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        gap:15px
+    }
+    article{
+        width: 40%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+
+    }
+    .bottom {
+display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+}
+@media (min-width:780px){
+    body{
+      max-height: 100vh;
+    }
+
+main{
+    padding:10px 30px;
+display: grid;
+grid-template-rows:45vh 45vh;
+grid-template-areas:
+"daniel daniel jonathan kira"
+"jeanette patrick patrick kira" ;
+gap: 15px;
+
+
+}
+article{
+    margin: 0;
+   width: 100%;
+   padding: 20px;
+}
+div.top{
+    margin:0 0 2rem  ;
+}
+.secondPrg {
+    width: 70%;
+    opacity: 50%;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .mainPrg {
+    font-size: large;
+    font-weight: 700;
+    position: relative;
+    z-index: 5;
+    margin: 0 0 5px 0;
+  }
+
+}
