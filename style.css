@@ -130,7 +130,6 @@ div.top{
     margin:0 0 2rem  ;
 }
 .secondPrg {
-    width: 70%;
     opacity: 50%;
     font-size: 1rem;
     margin-top: 10px;
@@ -141,6 +140,10 @@ div.top{
     position: relative;
     z-index: 5;
     margin: 0 0 5px 0;
+  }
+  .kira .secondPrg{
+    width: 70%;
+    margin: 20px auto;
   }
 
 }
